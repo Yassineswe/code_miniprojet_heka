@@ -103,12 +103,12 @@ git config --global user.email "votre@email.com"
 
 ## Récapitulatif — checklist à cocher
 
-- [ ] Le conteneur tourne (`docker ps`)
-- [ ] Le bureau virtuel s'affiche dans le navigateur
-- [ ] `colcon build` compile sans erreur
-- [ ] `turtlesim_node` s'ouvre
-- [ ] `circle_mover` fait tourner la tortue en cercle
-- [ ] `/turtle1/cmd_vel` apparaît dans `ros2 topic list` et publie des messages
-- [ ] Git est configuré (nom + email)
+- [-] Le conteneur tourne (`docker ps`)
+- [-] Le bureau virtuel s'affiche dans le navigateur
+- [-] `colcon build` compile sans erreur
+- [-] `turtlesim_node` s'ouvre
+- [-] `circle_mover` fait tourner la tortue en cercle
+- [-] `/turtle1/cmd_vel` apparaît dans `ros2 topic list` et publie des messages
+- [-] Git est configuré (nom + email)
 
 **Si vous avez un problème avec cette étape contactez moi directement, je vous aiderais.**

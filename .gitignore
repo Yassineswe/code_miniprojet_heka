@@ -7,3 +7,7 @@ ros2_ws/log/
 *.pyc
 __pycache__/
 .DS_Store
+
+# Clones perso des tutoriels ROS2 (pas partie de la soumission)
+ros2_ws/src/examples/
+ros2_ws/src/ros_tutorials/
