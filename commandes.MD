@@ -42,13 +42,7 @@ Démarrez les nœuds dans cet ordre :
    ros2 run turtle_executor executor_node
    ```
 
-3. **Terminal 3 — observation facultative des commandes**
-
-   ```bash
-   ros2 topic echo /trajectory_cmd
-   ```
-
-4. **Terminal 4 — commandeur C++**, à démarrer en dernier
+4. **Terminal 3 — commandeur C++**, à démarrer en dernier
 
    ```bash
    ros2 run brain_commander commander_node
