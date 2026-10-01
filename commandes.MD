@@ -58,13 +58,7 @@ Le commandeur commence sa trajectoire dès son lancement. Démarrer l’exécute
 
 ## Trajectoire attendue
 
-La tortue avance d’abord vers la droite pendant environ 2,75 secondes, tourne sur place pendant environ 1,57 seconde, puis suit un cercle. Sur `/trajectory_cmd`, les vitesses attendues sont approximativement :
-
-| Phase | `linear_speed` | `angular_speed` |
-|---|---:|---:|
-| Avance vers la droite | `1.0` | `0.0` |
-| Rotation vers le haut | `0.0` | `1.0` |
-| Cercle | `1.0` | `0.36` |
+La tortue avance d’abord vers la droite pendant environ 2,75 secondes, tourne sur place pendant environ 1,57 seconde, puis suit un cercle.
 
 ## Test d’une alerte d’obstacle
 
@@ -75,5 +69,3 @@ ros2 topic pub /obstacle_alert std_msgs/msg/Bool "{data: true}"
 ```
 
 Cette commande publie l’alerte de façon répétée. Dès que la tortue commence à reculer, faites **Ctrl+C** dans ce terminal. Elle doit reculer pendant environ une seconde sans tourner, puis s’arrêter. Le commandeur affiche la détection et la fin du recul; l’exécuteur signale l’alerte.
-
-Faites **Ctrl+C** dans les autres terminaux pour arrêter les nœuds.
