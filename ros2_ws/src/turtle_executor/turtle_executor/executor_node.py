@@ -34,19 +34,6 @@ class ExecutorNode(Node):
 
         self.get_logger().info('executor_node demarre, en attente de /trajectory_cmd...')
 
-    # -----------------------------------------------------------------
-    # TODO 1 : Convertir la commande recue en Twist.
-    #
-    # msg.linear_speed et msg.angular_speed contiennent les valeurs
-    # calculees par le node cerveau. Il faut les reporter dans le
-    # message Twist attendu par turtlesim (twist.linear.x et
-    # twist.angular.z).
-    # Indice : initialiser avec "twist = Twist()"
-    # -----------------------------------------------------------------
-
-    # -----------------------------------------------------------------
-    # TODO 2 : Afficher un message de log lorsque msg.avoid_obstacle est a True.
-    # -----------------------------------------------------------------
     def command_callback(self, msg):
         twist = Twist()
         twist.linear.x = msg.linear_speed
